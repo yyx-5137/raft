@@ -42,7 +42,7 @@
 				</el-table>
 			</el-dialog>
 		</div>
-		
+
 		<el-row :gutter="70" v-for="slaverItem in slaverList" :key="slaverItem.length">
 			<el-col :span="3">
 				<div class="grid-content"></div>
@@ -95,8 +95,7 @@
 		// 	setInterval(this.timer, 1000);
 		// },
 		mounted: function() {
-			// this.timer = setInterval(this.onLoad, 2000);
-			this.onLoad();
+			this.timer = setInterval(this.onLoad, 2000);
 		},
 		methods: {
 			active() {
